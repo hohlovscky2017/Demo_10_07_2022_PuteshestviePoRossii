@@ -27,7 +27,7 @@ namespace Demo_10_07_2022_PuteshestviePoRossii
         {
             InitializeComponent();
             ListTours.ItemsSource = _context.Tour.OrderBy(tour => tour.Name).ToList();
-            
+                        
             List<Type> types = new List<Type>();
             types.Add(new Type() { Name = "Все типы" });
             types.AddRange(_context.Type.OrderBy(t => t.Name).ToList());
